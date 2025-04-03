@@ -1,0 +1,85 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 20px;
+    background: linear-gradient(135deg, #FF9933, white, #138808);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h2 {
+    color: #222;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+canvas {
+    border: 4px solid #000080;
+    cursor: crosshair;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    margin-top: 15px;
+}
+
+.buttons {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+button {
+    padding: 14px 28px;
+    font-size: 18px;
+    cursor: pointer;
+    background: linear-gradient(135deg, #FF9933, #138808);
+    color: white;
+    border: none;
+    border-radius: 14px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #E67E22, #0F7A0C);
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35);
+}
+
+button:active {
+    transform: translateY(2px);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+#authResult {
+    margin-top: 25px;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.success {
+    color: #155724;
+    background-color: #d4edda;
+    border: 3px solid #c3e6cb;
+    padding: 12px;
+}
+
+.error {
+    color: #721c24;
+    background-color: #f8d7da;
+    border: 3px solid #f5c6cb;
+    padding: 12px;
+}

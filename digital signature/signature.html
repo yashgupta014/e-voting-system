@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Signature with Authentication</title>
+    <link rel="stylesheet" href="./signature.css">
+</head>
+<body>
+    <h2>Digital Signature Pad with Authentication</h2>
+    
+    <canvas id="signatureCanvas" width="500" height="200"></canvas>
+    <div class="buttons">
+        <button onclick="clearCanvas()">Clear</button>
+        <button onclick="saveSignature()">Save Signature</button>
+        <button onclick="verifySignature()">Verify Signature</button>
+        <button onclick="downloadSignature()">Download</button>
+    </div>
+    <p id="authResult"></p>
+
+    <!-- Scrollable Image Section at the Bottom -->
+    <div class="achievements-container">
+        <h3>India's Achievements in E-Commerce</h3>
+        <div class="achievements-scroll">
+            <img src="india-ecommerce-banner.jpg" alt="India E-Commerce Achievements">
+        </div>
+    </div>
+    
+    <script src="signature.js"></script>
+</body>
+</html>
