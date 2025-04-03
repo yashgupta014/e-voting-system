@@ -1,0 +1,34 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure E-Voting System</title>
+    <link rel="stylesheet" href="./rigester.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsencrypt/3.0.0/jsencrypt.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>🇮🇳 Secure E-Voting System 🇮🇳</h1>
+    </header>
+    <div class="container">
+        <h2>Register to Vote</h2>
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" required placeholder="Enter Your Full Name">
+        <br><br>
+        <label for="voterId">Create Voter ID:</label>
+        <input type="text" id="voterId" required placeholder="Create a Unique Voter ID">
+        <br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" required placeholder="Create a Secure Password">
+        <br><br>
+        <button onclick="registerUser()">📝 Register</button>
+        <p id="registerMessage"></p>
+    </div>
+    
+    <script src="rigester.js"></script>
+</body>
+</html>
