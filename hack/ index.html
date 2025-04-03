@@ -1,0 +1,33 @@
+
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure E-Voting System</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsencrypt/3.0.0/jsencrypt.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>🇮🇳 Secure E-Voting System 🇮🇳</h1>
+    </header>
+    <div class="container">
+        <h2>Cast Your Vote Securely</h2>
+        <label for="voterId">Enter Voter ID:</label>
+        <input type="text" id="voterId" required placeholder="Your Unique Voter ID">
+        <br><br>
+        <label for="vote">Choose Your Candidate:</label>
+        <select id="vote">
+            <option value="Candidate A">Candidate A</option>
+            <option value="Candidate B">Candidate B</option>
+        </select>
+        <br><br>
+        <button onclick="castVote()">🗳️ Submit Vote</button>
+        <p id="message"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
